@@ -22,4 +22,7 @@ services:
         value: 5678
       - key: N8N_ENCRYPTION_KEY
         value: J3Xj9<<i(Rm:kD+(
+      - key: N8N_USER_MANAGEMENT_DISABLED
+        value: 'true'
+
 
