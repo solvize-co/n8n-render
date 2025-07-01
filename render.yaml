@@ -1,12 +1,12 @@
 services:
   - type: web
-    name: n8n
-    env: docker
-    plan: starter  # This ensures it's on the free tier
+    name: n8n-core
+    env: node
+    plan: starter
     branch: main
     region: oregon
     numInstances: 1
-    healthCheckPath: /
+    healthCheckPath: /healthz
     envVars:
       - key: DB_TYPE
         value: sqlite
@@ -16,16 +16,13 @@ services:
         value: Khandekar@6622!!
       - key: WEBHOOK_URL
         value: https://n8n-core.onrender.com
-      - key: N8N_USER_MANAGEMENT_DISABLED
-        value: 'true'
-      - key: N8N_HOST
-        value: n8n-core.onrender.com
-      - key: N8N_PORT
-        value: 5678
       - key: N8N_ENCRYPTION_KEY
         value: J3Xj9<<i(Rm:kD+(
       - key: N8N_USER_MANAGEMENT_DISABLED
-        value: true
-        
+        value: 'true'
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
+        value: 5678
 
 
