@@ -24,5 +24,7 @@ services:
         value: 0.0.0.0
       - key: N8N_PORT
         value: 5678
+- key: DB_SQLITE_DATABASE
+  value: /data/n8n.sqlite
 
 
