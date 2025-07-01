@@ -16,6 +16,8 @@ services:
         value: Khandekar@6622!!
       - key: WEBHOOK_URL
         value: https://n8n-core.onrender.com
+      - key: N8N_USER_MANAGEMENT_DISABLED
+        value: 'true'
       - key: N8N_HOST
         value: n8n-core.onrender.com
       - key: N8N_PORT
